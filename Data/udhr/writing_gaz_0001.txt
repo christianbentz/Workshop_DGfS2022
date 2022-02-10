@@ -1,0 +1,100 @@
+#type:		writing
+#specification:	Oromo, Borana-Arsi-Guji (gaz)
+#scriptcode:	Latn
+#source:	https://unicode.org/udhr/d/udhr_gax.html (last access: 19.09.2019)
+#encoding:	utf-8
+#copyright:	NA
+#comments:	Full translation of the Universal Declaration of Human Rights into Oromo. "Qabxii" should translate as "Article" and the document starts with a preamble ("seensa"). Every subitem within an article has its own line. 
+
+<line_1>	SEENSA
+<line_2>	Ulfinni fi wal-qixxummaan ilmoo namaa kan uummattoota hundaa akka ifatti kabajamu gochuun bu'ura bilisummaa, haqaa fi nageenya addunyaa waan ta'eef;
+<line_3>	Mirga namummaa irra ijjechuun yookaan tuffachuun yeroo hunda jeequmsa badiisa fidu uumee uummata kan dheekamsiisu waan ta'eef, akkasumas addunyaa haaraa kan uummanni ishee wal-qixxummaadhaan, bilisummaa yaadaa fi amantii argatanii, yaaddoo fi dhaba irraa birmaduu ta'anii gammachuudhaan akka jiraatan gochuun hawwii fi fedha uummattoota addunyaa waan ta'eef;
+<line_4>	Uummanni bulchiisa rooroo fi cunqursaa ofirra kuffisuuf humnaan akka hinfayyadamnetti yoo barbaachise, mirgooti namummaa seeraan akka eegamu gochuun barbaachisaa waan ta'eef;
+<line_5>	Biyyoota gidduutti walitti-dhufeenyi michumaa fi wal-jaalalaa akka dagaagu gochuun barbaachisaa waan ta'eef;
+<line_6>	Miseensoti Waldaa Mootummoota hundi chartarii waldichaa keessatti mirga namummaa irratti, ulfina namaa irratti akkasumas wal-qixxummaa namoota hundaa (dhiiras ta'ee dubartii) irratti amantee qaban kan ibsan waan ta'eef;
+<line_7>	Akkasumas guddina hawaasummaa fi wayyaawuu sadarkaa jireenyaa fiduuf kan murannoodhaan hojjetan waan ta'eef;
+<line_8>	Miseensoti Waldaa Mootummootaa marti, Dhaabbata Waldaa Mootummootaa wajjin wal-ta'uudhaan kabajaan walii-galaa kan mirga namummaa fi kan bilisummaa hundaa akka eegamuuf waadaa waan seenaniif;
+<line_9>	Mirgootaa fi bilisummaa kana akka gaariitti hubatanii beekuun waadaa kana hojii irra oolchuuf guddisee kan gargaaru waan ta'eef;
+<line_10>	Kanaafuu
+<line_11>	Wal-ga'iin Walii-gala Waldaa Mootummootaa:
+<line_12>	Labsii Waliigala Mirgoota Namummaa kan uummattoonni fi biyyooti hundi walii-galteedhaan kabajan labsuudhaan, tokkoon- tokkoon uummataa fi qaamoti hawaasaa marti labsii kana hubatanii yeroo hunda akka kabajan, labsii kana barsiisuudhaan mirgootii fi bilisummaan hundi akka kabajaman akka carraaqan, karaa tarkaanfii sadarkaa biyyaa fi addunyaatti fudhatamaniinis mirgootii fi bilisummaan kun akka kabajaman akka godhan, kunis immoo uummattootaa fi miseensota Waldaa Mootummootaa giduutti akka hubatamu akka godhan jecha, labsii kana labseera.
+<line_13>	Qabxii 1
+<line_14>	Namooti hundinuu birmaduu ta'anii mirgaa fi ulfinaanis wal-qixxee ta'anii dhalatan. Sammuu fi qalbii ittiin yaadan waan uumamaan kennameef, hafuura obbolummaatiin walii-wajjin jiraachuu qabu.
+<line_15>	Qabxii 2
+<line_16>	Namni kamiyyuu mirgootaa fi birmadummaa labsii kana keessatti ibsaman, garaagarummaa sanyii, bifaa, saalaa (dhiiraa fi dubartummaa), qooqaa, amantii, ejjennaa siyaasaa, sablammummaa, hawaasummaa, qabeenyaa, dhalootaa fi waan biraatiin utuu addaan hin ba'in, ni argata.
+<line_17>	Kana malees immoo, garaagarummaan kamiyyuu karaa siyaasaa, karaa biyyummaa, karaa wal-caalmaa sadarkaa bulchiisa biyyaa fi karaa adda-addaa hin godhamu.
+<line_18>	Qabxii 3
+<line_19>	Namni kamiyyuu mirga jiraachuu, birmadummaa argachuu fi mirga qaamni isaa eegamuu ni qaba.
+<line_20>	Qabxii 4
+<line_21>	Namni homtuu garbummaa jalatti hin bulu, garbummaa fi daldalli garbaa bifa kamiin iyyuu dhorkaa dha.
+<line_22>	Qabxii 5
+<line_23>	Namni kamiyyuu reebichii fi gidiraan hammeenyaa yookaan immoo wanti ulfina namummaa isaa hanqisu yookaan kan hammeenyaan adabsiisu irra hin ga'u.
+<line_24>	Qabxii 6
+<line_25>	Namni kamiyyuu akka namummaa isaatti seera duratti beekame kabajaa argachuu qaba.
+<line_26>	Qabxii 7
+<line_27>	Namoonni hundi seera fuula duratti wal-qixxee ilaalamanii, garaagarummaa tokko malee, eegumsa seeraa argachuu qabu. Namoonni hundinuu waan labsii kanaan mormee isaan addaan qoodu hundumaa irraa eegamuu qabu.
+<line_28>	Qabxii 8
+<line_29>	Namni kamiyyuu mirgoota heeraan yookaan seeraan isaaf kenname cabsuudhaan waan isa hubu hundumaa irraa karaa mana murtii yookaan yaa'ii biyyaa eegumsa argachuuf mirga ni qaba.
+<line_30>	Qabxii 9
+<line_31>	Namni kamiyyuu garmalee hin hidhamu, biyyaas hin ari'atamu.
+<line_32>	Qabxii 10
+<line_33>	Namni kamiyyuu yeroo yakkaan himatamee mirgooti isaa fi ittigaafatamni isaa murteeffamutti, qaama loogii irraa birmaduu ta'etti dhiyaatee sirrii, qajeeltoo fi wal-qixummaadhaan gaafatamuuf mirga ni qabaata.
+<line_34>	Qabxii 11
+<line_35>	1. Namni kamiyyuu yeroo yakkaan himatamutti, hanga seeraan yakkaa ta'uun isaa itti muramutti, mirga qulqulluu ta'ee ilaalamuu ni qaba. Yeroo yaa'iitti dhiyaatus waan egumsa isaaf wabii darbu hunda ni argata.
+<line_36>	2. Namni kamiyyuu waan yakka ta'ee hin lakka'amnetti, sadarkaa biyyaattis ta'e sadarkaa addunyaatti, yakkamuu hin danda'u. Kana malees, adaba kan yeroo yakkichi raawwatame muramuu qabu caalaatiin hin adabamu.
+<line_37>	Qabxii 12
+<line_38>	Namni kamiyuu mirgi inni mana isaa keessa, qofaa isaa ykn. maatii isaa wajjin jiraachuuf qabu, yookaan mirgi inni ergaa xalayaa isaa dhoksaadhaan akka eegamuuf qabu jalaa hin tuqamu. Ulfinni namummaa isaa fi ulfinni maqaa isaas hin tuqamu. Namni kamiyyuu hubaatii ykn. yaalii akkanaa irraa seeraan ni eegama.
+<line_39>	Qabxii 13
+<line_40>	1. Namni kamiyyuu biyya isaa keessatti mirga asiif achi adeemuu ni qaba.
+<line_41>	2. Namni kamiyyuu biyya kan isaas ta'e kan biraa keesaa gadi ba'ee itti deebi'uuf mirga ni qaba.
+<line_42>	Qabxii 14
+<line_43>	1. Namni kamiyyuu biyyoota kan biraa keessatti mirga koolu galtummaa gaafatee argachuu ni qaba.
+<line_44>	2. Mirgi kunis waan yakka siyaasaatiin alaa ta'e ykn. waan kaayyoo yookaan hafuura Waldaa Motummootaatiin mormu yoo ta'e hin kennamu.
+<line_45>	Qabxii 15
+<line_46>	1. Namni kamiyyuu mirga lammummaa ni qaba.
+<line_47>	2. Namni kamiyyuu akkasummaan mirga lammummaa hin dhabu, yookaan mirga lammummaa isaa gedderachuu hin dhabu.
+<line_48>	Qabxii 16
+<line_49>	1. Dhiirris, dubartiinis kan umuriin isaanii fudhaaf heeruma ga'e. garaagarummaa sanyii, lammumaa fi amanteetiin utuu addaan hin qoodamin, wal-fuudhanii mirga bultii ijaarachuu ni qabaatu; yeroo wal-fuudhanis ta'ee yeroo wal-hiikanittis mirga qixxee ni qabaatu.
+<line_50>	2. Fudhaaf heerumni fedha namoota wal-fuudhan irratti kan hundeeffamu ta'a.
+<line_51>	3. Maatiin tokko qaama hawaasummaa ishee xinnoo waan ta'eef, eegumsi hundi hawaasichaa fi mootummaa irraa kennamuu fi qaba.
+<line_52>	Qabxii 17
+<line_53>	1. Namni kamiyyuu qofaattis ta'e namoota biraa wajjin ta'uudhaan mirga qabeenya horachuu ni qaba.
+<line_54>	2. Namni kamiyyuu seera malee qabeenya isaa dhabuu hin qabu.
+<line_55>	Qabxii 18
+<line_56>	Namni kamiyyuu bilisummaa yaaduu, samuu fi amantii ni qaba. Mirgi kun, namni kamiyyuu, amantii yookaan amantee filate qabachuu yookiin fudhachuu, amantii fi amantee isaa qofaa isaatti yookiin namoota biraa wajjin ifatti yookiin dhunfaatti waaqefachuu, hordofuu, hojii irra olchuu, barsiisuu yookiin ibsuu of keessaa qaba.
+<line_57>	Qabxii 19
+<line_58>	Namni kamiyyuu ilaalcha isatti fakkaate qabachuu, yaada isaas ibsuuf mirga qaba. Mirgi kun, dhiibbaa tokko malee yaada isaa ibsuu, odeeffannoo fi yaada kamiyyuu walitti qabuu fi karaa meeshaa tamsaasaa daangaan utuu itti hin godhamin dabarsuu of keessaa qaba.
+<line_59>	Qabxii 20
+<line_60>	1. Namni kamiyyuu mirga nagayaan wal-ga'uu fi nagayaan hiriira ba'u ni qaba.
+<line_61>	2. Namni kamiyyuu miseensa walda tokkoo ta'uuf hin dirqisiifamu.
+<line_62>	Qabxii 21
+<line_63>	1. Namni kamiyyuu, kallattiidhaanis ta'ee karaa bakka-buutota isaa, hojii mootummaa biyya isaa keessatti qooda fudhachuu ni danda'a.
+<line_64>	2. Namni kamiyyuu tajaajilaa uummataa argachuuf mirga ni qaba.
+<line_65>	3. Fedhi uummataa bu'uura aangoo mootummaati. Fedhi kunis yeroo filannootti ibsama. Filannoon kunis kan namni marti wal-qixummaadhaan qooda keessatti fudhatu yoo ta'u, sirni sagalee ofii ittiin kennanis dhoksaadhaan ni ta'a.
+<line_66>	Qabxii 22
+<line_67>	Namni kamiyyuu, akka miseensa hawaasichaatti, wabii hawaasaa argachuuf mirga ni qaba. Karaa carraaqa biyyaa fi waliigaltee addunyaas, akkasumas akka qabeenyaa fi caasaa biyya isaattis, ulfinaa fi guddina mataa isaaf waan barbaachisaa ta'an mirgoota dinagdee, hawaasummaa fi aadaa ni qaba.
+<line_68>	Qabxii 23
+<line_69>	1. Namni kamiyyuu mirga hojjechuu, hojji filachuu, hojjii keessatti haala mijuu argachuu fi hojii dhabuu irraa egamuu ni qaba.
+<line_70>	2. Namni kamiyyuu, utuu addaan hin qoodamin, hojii wal-fakkaatuuf mindaa qixxee argachuuf mirga ni qaba.
+<line_71>	3. Namni kamiyyuu gatii hojii isaatiif mindaa isaa fi maatii isaa ga'u argachuu qaba. Kunis kan ulfina namummaa isaaf ga'u ta'e, yoo barbaachises, eegumsa hawaasaa kan biraas argachuu ni danda'a.
+<line_72>	4. Namni kamiyyuu dhaabbatoota hojjetootaa uummatee keessatti qooda fudhachuudhaan mirgoota isaa eegsifachuu ni danda'a.
+<line_73>	Qabxii 24
+<line_74>	Namni kamiyyuu boqonnaa fi bashannana argachuuf, yeroo muramaa hojjechuuf, akkasumas mindaa isaa argachaa boqochuuf mirga ni gaba.
+<line_75>	Qabxii 25
+<line_76>	1. Namni kamiyyuu, innis maatiin isaas, fayyaa guutuu argatanii sadarkaa jireenya gaarii akka jiraatanitti, waan nyaata, uffataa, mana, eegumsa fayyaa fi tajaajila hawaasummaa hunda argatanii akka jiraatanitti, akkasumas hojii dhabuu, kunuunsa hawaasummaa dhabuu, dhukuba, kophummaa, dullumaa fi rakkoo jireenyaa adda addaa irraa egamuuf mirga qaba.
+<line_77>	2. Haadholii fi daa'iman gargaarsaa fi eegumsa qofaa argachuuf mirga ni qabu; daa'imman hundi, manattis ta'e bakkeedhaa yoo dhalatan, eegumsa hawaasummaa qixxeetti argachuuf mirga ni qabu.
+<line_78>	Qabxii 26
+<line_79>	1. Namni kamiyyuu mirga barumsa argachuu ni qaba. Barumsi, yoo xinnaate sadarkaa tokkoffaa fi lammataatti, tola ni kennama. Barumsi sadarkaa tokkoffaa dirqii dha. Barumsi tekinikii fii ogummaa kan biraa sadarkaa lammaftaatti kan kenamu yoo ta'u, kunis kan kennamu akka dandeettii abbaatti ta'a.
+<line_80>	2. Barumsi kennamu kan namummaa namaa guddisuu fi kan eegumsa mirgootaa fi bilisummaa ilmoo namaa jabeessu ta'uu qaba. Kana malees, uummattoota addunya gidduutti waliigaltee fi michummaa kan jabbeessu, sanyii fi amantii adda-addaa gidduuti waliigaltee kan uumu, akkasumas hojiiwwan Dhaabbata Waldaa Mootummootaa fi nageenya uummataa kan jabeessu ta'uu qaba.
+<line_81>	3. Warri ijoollee, akaakuu barumsaa kan fedhan ijoollee isaaniitiif filachuuf mirga ni qabu.
+<line_82>	Qabxii 27
+<line_83>	1. Namni kamiyyuu jireenya aadaa biyyaa keessatti dhorkaa malee qooda fudhachuu ni danda'a; faayidaa aartii fi saayinsii irraas bashannana yookiin gammachuu argachuu ni qaba.
+<line_84>	2. Namni kamiyyuu waan ogummaa saayinsii, aartii fi barreessuu ofii isaaf hojjeterraa bu'aan argamu hundi akka eegamuuf mirga ni qaba.
+<line_85>	Qabxii 28
+<line_86>	Namni kamiyyuu mirgootii fi bilisummaan labsii kana keessatti tarreeffaman marti, akka hojiitti hiikamaniif sirna hawaasaa fi addunyaa irraa waan barbaadamu hunda ni argata.
+<line_87>	Qabxii 29
+<line_88>	1. Namni kamiyyuu hawaasa namummaan isaa keessatti eegamee gabbatu keessatti itti gaafatamummaas ni qaba.
+<line_89>	2. Namni kamiyyuu, mirgootaa fi bilisummaa isaa yeroo hojiitti hiikutti, mirgootii fi bilisummaan isaa kan daangeffamuu danda'u seeraan ta'ee, kunis immoo mirgootaa fi bu'aa namoota biraa kan eegsisu, yookiin immoo bu'aa fi negeenya uummataa kan eegsisu yeroo ta'uu dha.
+<line_90>	3. Mirgootii fi bilisummaan kun hojii irra kan oolan kaayyoo fi hafuura Dhaabbata Waldaa Mootummoota kan hin faallessine ta'anii you argaman qofa.
+<line_91>	Qabxii 30
+<line_92>	Wanti labsii kana keessatti ibsame hundi, mirgootaa fi bilisummaa ibsaman cabsuuf yaadamee, yookiin gocha tokko raawwachuuf jedhamee, akka waan mootummaa tokko, yookin dhaabbata tokko yookiin nama tokko ilaalu jedhamee lakka'aamu hin qabu.

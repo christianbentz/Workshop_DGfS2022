@@ -1,0 +1,98 @@
+#type:		writing
+#specification:	Azerbaijani, North (Latin) (azj)
+#scriptcode:	Latn
+#source:	https://unicode.org/udhr/d/udhr_azj_latn.html (last access: 25.09.2019)
+#encoding:	utf-8
+#copyright:	NA
+#comments:	Full translation of the Universal Declaration of Human Rights into Azerbaijani. The document starts with a preamble („PREAMBULA“) and "Maddə" translates as "article". Every subitem within an article has its own line.
+
+<line_1>	PREAMBULA
+<line_2>	Bəşər ailəsinin bütün üzvlərinə xas olan ləyaqət hissinin və onların bərabər və ayrılmaz hüquqlarının tanınmasının azadlıq, ədalət və ümumi sülhün əsası olduğunu nəzərə alaraq,
+<line_3>	insan hüquqlarına etinasızlıq və nifrətin bəşəriyyəti dəhşətə gətirən barbarizm hərəkətlərinə səbəb olduğunu və insanların söz və etiqad azadlığına malik, qorxu və ehtiyacdan azad olduqları dünyanın yaradılmasının bəşəriyyətin ən ali istəyi olduğunu nəzərə alaraq,
+<line_4>	insanın son vasitə kimi istibdad və zülmə qarşı qiyama qalxmağa məcbur olmamasını təmin etmək üçün insan hüquqlarının qanunun hakimiyyəti ilə müdafiə olunmasının zəruriliyini nəzərə alaraq,
+<line_5>	xalqlar arasında mehriban münasibətlərin inkişafını dəstəkləməyin vacibliyini nəzərə alaraq,
+<line_6>	Birləşmiş Millətlərin xalqlarının BMT Nizamnaməsində əsas insan hüquqlarına, insan şəxsiyyətinin ləyaqət və dəyərinə, kişi və qadınların hüquq bərabərliyinə inamlarını təsdiq etdiklərini və daha geniş azadlıq şəraitində sosial tərəqqi və həyat şəraitinin yaxşılaşdırılmasına yardım etməyi qət etdiklərini nəzərə alaraq,
+<line_7>	üzv dövlətlərin BMT ilə əməkdaşlıq şəraitində insan hüquqlarına və əsas azadlıqlara ümumi hörmət və onlara əməl olunmasına yardım etməyi öhdələrinə götürdüklərini nəzərə alaraq,
+<line_8>	bu hüquq və azadlıqların xarakterinin tam şəkildə dərk olunmasının həmin öhdəliyin hərtərəfli yerinə yetirilməsi üçün böyük əhəmiyyət kəsb etdiyini nəzərə alaraq,
+<line_9>	BMT Baş Assambleyası
+<line_10>	İnsan hüquqları Haqqında Ümumi Bəyannaməni, hər bir kəsin və cəmiyyətin hər bir orqanının bu Bəyannaməni rəhbər tutaraq maarifçilik və tədris yolu ilə həmin hüquq və azadlıqlara hörmət olunmasına yardım etməsi və milli və beynəlxalq səviyyədə tərəqqipərvər tədbirlər yolu ilə, həm təşkilatın üzvü olan xalqları, həm də onların yurisdiksiyası altında olan ərazilərin xalqları arasında ümumilikdə və effektiv tanınması və həyata keçirilməsinə səy göstərmələri məqsədilə bütün xalqlar və bütün dövlətlərin yerinə yetirməyə can atmalı olduqları vəzifə kimi bəyan edir.
+<line_11>	Maddə 1
+<line_12>	Bütün insanlar ləyaqət və hüquqlarına görə azad və bərabər doğulurlar. Onların şüurları və vicdanları var və bir-birlərinə münasibətdə qardaşlıq ruhunda davranmalıdırlar.
+<line_13>	Maddə 2
+<line_14>	Hər bir şəxs irqindən, dərisinin rəngindən, cinsindən, dilindən, dinindən, siyasi və digər əqidəsindən, milli və ya sosial mənşəyindən, əmlak, sosial mövqe və digər vəziyyətindən asılı olmayaraq bu Bəyannamədə elan olunmuş bütün hüquq və azadlıqlara malik olmalıdır.
+<line_15>	Bundan əlavə, həmin şəxsin mənsub olduğu ölkənin və ya ərazinin, həmin ərazinin müstəqil, qəyyumluq altında olan, özüidarəolunmayan və ya suverenliyi hər hansı şəkildə məhdudlaşmış olmasından asılı olmayaraq, siyası, hüquqi və beynəlxalq statusundan asılı olaraq heç bir ayrı-seçkilik qoyulmamalıdır.
+<line_16>	Maddə 3
+<line_17>	Hər bir şəxsin yaşamaq, azadlıq və şəxsi toxunulmazlıq hüququ var.
+<line_18>	Maddə 4
+<line_19>	Heç kim kölə və ya asılı vəziyyətdə saxlanıla bilməz; quldarlıq və qul ticarəti bütün formalarda qadağan edilir.
+<line_20>	Maddə 5
+<line_21>	Heç kim işgəncəyə və ya qəddar, qeyri-insani və ya onun ləyaqətini alçaldan münasibətə və cəzaya məruz qalmamalıdır.
+<line_22>	Maddə 6
+<line_23>	Hər bir şəxs harada olmasından asılı olmayaraq özünün hüquq subyektltiliyinin tanınması hüququna malikdir.
+<line_24>	Maddə 7
+<line_25>	Bütün insanlar qanun qarşısında bərabərdirlər və qanun tərəfindən bərabər müdafiə hüququna malikdirlər. Bütün insanlar bu Bəyannaməni pozan hər hansı ayrı-seçkilikdən və belə ayrı-seçkiliyə hər hansı cəhddən bərabər müdafiə olunma hüququna malikdirlər.
+<line_26>	Maddə 8
+<line_27>	Hər bir şəxs Konstitusiyanın və ya qanunun ona verdiyi hüquqların pozulması zamanı sələahiyyətli milli məhkəmələr tərəfindən hüquqlarının bərpa olunması hüququna malikdir.
+<line_28>	Maddə 9
+<line_29>	Heç kim özbaşına həbsə, tutulmaya və ya sürgünə məruz qala bilməz.
+<line_30>	Maddə 10
+<line_31>	Hər bir şəxs onun hüquq və vəzifələrinin təyini və ona qarşı irəli sürülmüş cinayət ittihamının əsaslılığının müəyyənləşdirilməsi üçün onun işinin müstəqil və bitərəf məhkəmədə, tam bərabərlik əsasında, aşkarlıq və ədalətin bütün tələblərinin gözlənilməsi şəraitində baxılması hüququna malikdir.
+<line_32>	Maddə 11
+<line_33>	1. Cinayət törətməkdə ittiham olunan hər bir şəxs günahı ona müdafiə üçün bütün imkanların təmin olunduğu açıq məhkəmə istintaqında qanuni şəkildə sübut olunanadək günahsız hesab edilmək hüquna malikdir.
+<line_34>	2. Heç bir kəs milli qanunvericilik və ya beynəlxalq hüquqa əsasən törədildiyi zaman cinayət hesab edilməyən hərəkət və ya hərəkətsizlik üçün cinayətdə ittiham oluna bilməz. Eyni zamanda cinayətin törədildiyi zaman tətbiq oluna biləcək cəzadan daha ağırı tətbiq oluna bilməz.
+<line_35>	Maddə 12
+<line_36>	Heç kim şəxsi və ailə həyatına müdaxiləyə, evinin toxunulmazlığına, məktublaşmasının gizliliyinə, şərəf və nüfuzuna özbaşına qəsdə məruz qala bilməz. Hər bir şəxsin belə müdaxilə və qəsdən qanun tərəfindən müdafiə olunmaq hüququ var.
+<line_37>	Maddə 13
+<line_38>	1. Hər bir şəxs hər bir ölkə hüdudunda sərbəst hərəkət etmək və yaşayış yeri seçmək hüququna malikdir.
+<line_39>	2. Hər bir şəxs öz ölkəsi də daxil olmaqla istənilən ölkəni tərk etmək və öz ölkəsinə qayıtmaq hüququna malikdir.
+<line_40>	Maddə 14
+<line_41>	1. Hər bir şəxs digər ölkələrdə təqibdən sığınacaq axtarmaq və bu sığınacaqdan istifadə etmək hüququna malikdir.
+<line_42>	2. Bu hüquq həqiqətən də qeyri-siyasi cinayət və ya Birləşmiş Millətlər Təşkilatının məqsəd və prinsiplərinə zidd hərəkət törədilməsinə əsaslanan təqiblər zamanı istifadə oluna bilməz.
+<line_43>	Maddə 15
+<line_44>	1. Hər bir şəxs vətəndaşlıq hüququna malikdir.
+<line_45>	2. Heç kim özbaşına olaraq vətəndaşlıqdan və vətəndaşlığını dəyişmək hüququndan məhrum edilə bilməz.
+<line_46>	Maddə 16
+<line_47>	1. Yetkinlik yaşına çatmış kişilər və qadınlar irqi, milli və dini əlamətlərinə görə heç bir məhdudiyyət qoyulmadan nikaha daxil olmaq və ailə qurmaq hüququna malikdirlər. Onlar nikaha daxil olarkən, nikah müddətində və onun pozulması zamanı eyni hüquqlardan istifadə edirlər.
+<line_48>	2. Nikah, nikaha daxil olan hər iki tərəfin azad və tam razılığı olarsa bağlana bilər.
+<line_49>	3. Ailə cəmiyyətin təbii və başlıca qrup vahididir və cəmiyyət və dövlət tərəfindən müdafiə olunma hüququna malikdir.
+<line_50>	Maddə 17
+<line_51>	1. Hər bir şəxsin həm təkbaşına, həm də digərləri ilə birlikdə mülkiyyətə sahib olma hüququ var.
+<line_52>	2. Heç kim özbaşına olaraq mülkiyyətdən məhrum edilə bilməz.
+<line_53>	Maddə 18
+<line_54>	Hər bir şəxs düşüncə, vicdan və din azadlığı hüququna malikdir; bu hüquqa öz dinini və etiqadını dəyişmək azadlığı və öz dininə və inanclarına təhsil, dua və dini və ritual ayinlər zamanı təklikdə və ya başqaları ilə birlikdə, aşkar və ya fərdi şəkildə etiqad etmək azadlığı daxildir.
+<line_55>	Maddə 19
+<line_56>	Hər bir şəxs əqidə və onu sərbəst ifadə etmək azadlığı hüququna malikdir; bu hüquqa maneəsiz olaraq əqidəyə malik olmaq və informasiya və ideyaları dövlət sərhədlərindən asılı olmayaraq istənilən vasitələrlə axtarmaq, əldə etmək və yaymaq azadlığı daxildir.
+<line_57>	Maddə 20
+<line_58>	1. Hər bir şəxs dinc yığıncaqlar və assosiasiyalar azadlığı hüququna malikdir.
+<line_59>	2. Heç bir şəxs hər hansı bir assosiasiyaya qoşulmağa məcbur edilə bilməz.
+<line_60>	Maddə 21
+<line_61>	1. Hər bir şəxs dövlətin idarə olunmasında bilavasitə və ya azad şəkildə seçilmiş nümayəndələr vasitəsilə iştirak etmək hüququna malikdir.
+<line_62>	2. Hər bir şəxs öz ölkəsində dövlət xidmətində qulluq etmək üçün bərabər imkana malik olmaq hüququna malikdir.
+<line_63>	3. Xalqın iradəsi iqtidar hakimiyyətinin əsası olmalıdır; bu iradə öz ifadəsini gizli səsvermə yolu ilə, ümumi və bərabər seçki hüququ və ya səsvermənin azadlığını təmin edən digər eynimənalı formalar əsasında keçirilən mütamadi və saxtalaşdırılmamış seçkilərdə tapmalıdır.
+<line_64>	Maddə 22
+<line_65>	Hər bir şəxs cəmiyyətin üzvü kimi sosial müdafiə hüququna və milli səylər və beynəlxalq əməkdaşlıq yolu ilə və hər bir dövlətin strukturu və resurslarına uyğun olaraq onun ləyaqətinin müdafiəsi və şəxsiyyətinin azad inkişafı üçün iqtisadi, sosial və mədəni sahələrdə hüquqlara malikdir.
+<line_66>	Maddə 23
+<line_67>	1. Hər bir şəxsin əmək, sərbəst iş yeri seçmək, ədalətli və yaxşı iş şəraiti və işsizlikdən müdafiə hüququ var.
+<line_68>	2. Hər bir şəxs heç bir ayrı-seçkilik olmadan eyni iş üçün eyni əmək haqqı almaq hüququna malikdir.
+<line_69>	3. Hər bir işləyən şəxs, əməyinin lazım gələrsə digər sosial müdafiə vasitələrilə tamamlanan, onun özünün və ailəsinin layiqli dolanışığını təmin edə bilən ədalətli və qənaətbəxş ödənilməsi hüququna malikdir.
+<line_70>	4. Hər bir şəxsin həmkarlar ittifaqı yaratmaq və öz sosial maraqlarını müdafiə etmək üçün həmkarlar ittifaqlarına daxil olmaq hüququ var.
+<line_71>	Maddə 24
+<line_72>	Hər bir şəxsin istirahət və asudə vaxt, o cümlədən iş gününün ağlabatan hüdudu və ödənilən mütamadi məzuniyyət hüququ var.
+<line_73>	Maddə 25
+<line_74>	1. Hər bir şəxs onun özünün və ailəsinin səhhət və rifahını təmin etmək üçün lazım olan, qida, geyim, tibbi xidmət və lazımi sosial təminat da daxil olmaqla həyat səviyyəsi hüququna və işsizlik, xəstəlik, əlillik, dul qalma, qocalıq və ondan asılı olmayan səbəblər üzündən yaşayış vasitələrinin itirilməsi zamanı təminat hüququna malikdir.
+<line_75>	2. Analıq və uşaqlıq xüsusi qayğı və yardım almaq hüququna malikdirlər. Həm nikah nəticəsində həm də nikahdan kənar doğulmuş uşaqlar eyni sosial müdafiədən istifadə etməlidirlər.
+<line_76>	Maddə 26
+<line_77>	1. Hər bir şəxsin təhsil hüququ var. Ən azı ibtidai və ümumi təhsil pulsuz olmalıdır. İbtidai təhsil icbari olmalıdır. Hər kəs texniki və peşə təhsili almaq imkanına malik olmalıdır, ali təhsil də hər kəsin qabiliyyəti əsasında hamıya eyni dərəcədə müyəssər olmalıdır.
+<line_78>	2. Təhsil insan şəxsiyyətinin tam inkişafına və insan hüquqları və əsas azadlıqlara hörmətin artırılmasına yönəldilməlidir. Təhsil xalqlar, irqi və dini qruplar arasında qarşılıqlı anlaşmanın, dözümlülüyün və dostluğun möhkəmləndirilməsinə və Birləşmiş Millətlərin sülhü qoruma sahəsində fəaliyyətinə yardım etməlidir.
+<line_79>	3. Valideynlər öz azyaşlı uşaqlarının təhsil növünü seçməkdə üstünlüyə malikdirlər.
+<line_80>	Maddə 27
+<line_81>	1. Hər bir şəxs cəmiyyətin mədəni həyatında sərbəst iştirak etmək, incəsənətdən həzz almaq, elmi tərəqqidə iştirak etmək və onun faydasından istifadə etmək hüququna malikdir.
+<line_82>	2. Hər bir şəxs müəllifi olduğu elmi, ədəbi, və incəsənət əsərlərinin nəticəsində meydana çıxan maddi və mənəvi mənafelərinin qorunması hüququna malikdir.
+<line_83>	Maddə 28
+<line_84>	Hər bir şəxsin bu Bəyannamədə əks olunmuş hüquq və azadlıqların tam təmin olunduğu sosial və beynəlxalq düzüm hüququ var.
+<line_85>	Maddə 29
+<line_86>	1. Hər bir şəxs yalnız onun azad və tam inkişafı mümkün olduğu cəmiyyət qarşısında vəzifələr daşıyır.
+<line_87>	2. Öz hüquq və azadlıqlarını həyata keçirərkən hər bir şəxs yalnız elə məhdudiyyətlərə məruz qala bilər ki, onlar qanun tərəfindən digərlərinin hüquq və azadlıqlarının tanınması və hörmət olunmasının təmin edilməsi və demokratik cəmiyyətin əxlaqi, ictimai asayiş və ümumi rifah tələblərini ödəmək məqsədilə təyin edilmiş olsun.
+<line_88>	3. Bu hüquq və azadlıqların həyata keçirilməsi Birləşmiş Millətlər Təşkilatının məqsəd və prinsiplərinə zidd olmamalıdır.
+<line_89>	Maddə 30
+<line_90>	Bu Bəyannamədə heç nə hər hansı dövlətə, şəxslər qrupuna və ayrı-ayrı şəxslərə Bəyannaməndə elan olunmuş hüquq və azadlıqların məhvinə yönəlmiş hər hansı fəaliyyətlə məşğul olmaq və ya hər hansı hərəkəti törətmək hüququnun verilməsi kimi təfsir oluna bilməz.

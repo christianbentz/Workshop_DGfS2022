@@ -1,0 +1,95 @@
+#type:		writing
+#specification:	Luganda/Ganda (lug)
+#scriptcode:	Latn
+#source:	https://unicode.org/udhr/d/udhr_lug.html (last access: 19.09.2019)
+#encoding:	utf-8
+#copyright:	NA
+#comments:	Full translation of the Universal Declaration of Human Rights into Ganda. "Ekitundu" translates as "Article" and the document starts with a preamble ("EBYANJURA"). Every subitem within an article has its own line.
+
+<line_1>	EBYANJURA
+<line_2>	Ekitiibwa ky'omuntu eky'obutonde; okwenkanankana, wamu n'obuyinza obutayinza kugyibwawo ebyabantu bonna, gwe musingi gw'eddembe; obwenkanya n'emirembe mu nsi.
+<line_3>	Obanga abantu sibakikozesa kujeema 'ngeky' okulwanyisa ekisembayo, okwetaasa obufuzi obukambwe okutulugunya, kyetaagisa eddembe ly'obuntu okuba nga lifugibwa amateeka.
+<line_4>	Ekibiina ky'amawanga amagatte, mu kiwandiiko kyakyo kikakasa nga bwekikkiririza mu ddembe ly'obuntu era ne mu kittibwa n'omuwendo gw'omuntu era kimaliridde okukubiriza abantu okugenda mu maaso n'okulwanyisa omutindo gw'embeera y'obulamu bwabwe mu ddembe erisingawo.
+<line_5>	Amawanga g'amemba geeyamye okukolaganira awamu n'ekibiina ky'Amawanga Amagattere mu kukubiriza abantu abali okussamu ekitiibwa n'okukuuma eddembe ly'obuntu n'emisingi gyalyo.
+<line_6>	Okutegeera obulungi obuyinza (rughts) n'eddembe ly'obuntu kikulu nnyo mu kutuukiriza obweyamo obwo mubujjuvu.
+<line_7>	Olwekyo, Olukiiko ttabamiruka (General Assembly) olw'amawanga Amagatte, iulangirira Ekirangiriro EKIFUGA EDDEMBE LY'ABANTU BONNA WONNA MU NSI.
+<line_8>	Abantu bonna abali wonna olw'okubeera ne'kiruubirirwa ekimu eky'amawanga gonna, basaanye bulijjo okujjukiranga EKIRANGIRIRO kino, wamu n'okulafuubana okuyigiriza, okugunjula n'okukubiriza abantu okussaamu ekitiibwa eddembe ly'obuntu, okutangaaza amateeka gaalyo n'okugakuuma, mu bantu abali mu bitundu ebiri mu buyinza bwabwe.
+<line_9>	Ekitundu 1.
+<line_10>	Abantu bazaalibwa nga balina eddembe n'obuyinza ebyenkanankana, batondebwa nga balina amagezi era nga basobola okwawula ekirungi n'ekibi bwebatyo, buli omu agwana okuyisa munne nga muganda we.
+<line_11>	Ekitundu 2.
+<line_12>	Buli muntu agwana afune eddembe eryo gerwako mu KIWANDIIKO kino awatali kusolola kwona okw'engeri yonna okuyinza okusinziira ku:- ggwanga, langi y'olususu okuba omusajja oba mukazi, olulimi, eddini endowooza ye ku by'obufuzi oba ekintu ekirala ensi oba abantu mwasibuka, ebintu byalina obuzaale bwe oba ensonga endala yonna.
+<line_13>	Ekitundu 3.
+<line_14>	Buli muntu ateekwa okubeerawo nga mulamu nga yegazaanya awatali kutaataganyizibwa mu ngeri yonna.
+<line_15>	Ekitundu 4.
+<line_16>	Tewali muntu assanidde kufugibwa buddu, obuddu n'obusuubuzi bw'abaddu tebukirizibwa mu nsi.
+<line_17>	Ekitundu 5.
+<line_18>	Tewali muntu asanidde, kutulugunnyizibwa okubonerezebwa oba okuyisibwa mu ngeri eteri ya buntu emutyoboola.
+<line_19>	Ekitundu 6.
+<line_20>	Buli muntu amateeka gateekwa okumubala era n'okumuyisa ng'omuntu buli wantu wonna.
+<line_21>	Ekitundu 7.
+<line_22>	Abantu bonna benkanankana mu maaso g'amateeka era bateekwa okukuumibwa amateeka awatali kusosola. Abantu bonna bateekwa kukumibwa kyenkanyi eri obusosoze obufutyanka EKIWANDIIKO kino oba obubawaliirizza okusosola mu ngeri eyo.
+<line_23>	Ekitundu 8.
+<line_24>	Buli muntu ateekwa okukkirizibwa okutwala ensonga ze mu mbuga entuufu ez'eggwanga zikolebweko singa nga eddembe lyerimuweebwa mu Constitution ne mu mateeka liba lijolongeddwa.
+<line_25>	Ekitundu 9.
+<line_26>	Tewali muntu anakwatibwanga oba okusibibwanga oba okusibibwa oba okuwangangusibwa mu ngeri etegoberera mateeka.
+<line_27>	Ekitundu 10.
+<line_28>	Buli muntu awatali kusosola, ateekwa okuwozesebwa mu lwatu ate mu bwenkanya mu kooti eyeemala era eterina kyekubira, bwabanga annonya okukakasa onuyinza obumuweebwa mu mateeka singa waliwo omusango ogumenya amateeka ogumuvunaanibwa.
+<line_29>	Ekitundu 11.
+<line_30>	1. Buli muntu yenna avunaanibwa omusango oguliko ekibonerezo ateekwa okubalibwa nga taliiko musango okutuusa nga kikakasibbwanti ddala yaguzza okusinziira mu mateeka era ateekwa okuwozesebwa mu kooti mu lwatu nga aweereddwa na buli mukisa gwonna okwetaasa.
+<line_31>	2. Tewali muntu n'omu anabalibwanga nga azzizza omusango ogumubonerezesa, kino nga kisinzira kukikolwa kye yakola oba kyatakola, mu kiseera ekyemabega, kyokka nga mu kiseera ekyo ekikolwa kyeyakola oba kyeyalemwa okukola kyali tekittekwa kumubonerezesa, okusinziira mu mateeka g'eggwanga eryo oba ag'amawanga amalala Bwanabanga ateekwa okubonerezebwa mu kiseera weyazziza omusango ogwo.
+<line_32>	Ekitundu 12.
+<line_33>	Eddembe ly'omuntu yenna eyo gyabera amaka ge era n'ebbaluwa ze tebitaataganyizzibwe nga oba okwazibwa mu ngeri etegoberera mateeka, so n'erinnya lye teriweebuulwenga oba okulebulwa. Buli muntu ateekwa okukuumibwa amateeka aleme kutaataaganyizibwa oba okulumbibwa mu ngeri eyo.
+<line_34>	Ekitundu 13.
+<line_35>	1. Buli muntu alina eddembe okugenda oba okusula wonna wayagala, munda w'ensalo ez'eggwanga lye.
+<line_36>	2. Buli muntu wa ddembe okufuluma okuva mu ggwanga lyona, kino nga kitwaliramu n'eggwanga lye, wamu n'okudda mu ggwanga lye.
+<line_37>	Ekitundu 14.
+<line_38>	1. Omuntu ayigganyizibwa waddembe okunoonya obubudamo mu ggwanga eddala era n'okusanyukira mu bubudamo obwo.
+<line_39>	2. [missing]
+<line_40>	Ekitundu 15.
+<line_41>	1. Buli muntu ateekwa okufuna eggwanga ettongole gyabalirwa ng'omutuuze.
+<line_42>	2. Tewali muntu yenna anagyibwangako obutuuza bw'eggwanga lye wadde okugaanibwa okukyusa obutuuze bwe okubugya mu ggwanga erimu okubuuza mu ddala.
+<line_43>	Ekitundu 16.
+<line_44>	1. Omusajja oba omukazi omukulu atuuse okwesalirawo, taakomerwenga mu ngeri yenna obutawasa oba okufumbirirwa n'okuzaala abaana, olw'olulyo mwasibuka, olw'eggwanga lye oba lwe'eddini ye. Omusajja n'Omukazi balina onuyinza n'eddembe ebyenkanankana nga tebannafumbiriganwa, oba nga bafumbiriganiddwa oba oluvannyuma lw'obufumbo bwabwe okusattululwa.
+<line_45>	2. Amaka gwe musingi gw'eggwanga ogw'obuwangwa olwekyo abantu ne gavumenti basaanye okugakuuma obutiribiri.
+<line_46>	3. [missing]
+<line_47>	Eitundu 17.
+<line_48>	1. Buli muntu waddembe okwefunira ebintu bye kululwe oba nga yeetabye ne n'abantu abalala.
+<line_49>	2. Tewali muntu yenna anaggyibwangako ebintu bye mu ngeri etagoberera matteka.
+<line_50>	Ekitundu 18.
+<line_51>	Buli muntu alina eddembe ery'okwerowooleza okwawula ekirungi n'ekibi n'okulondawo eddini gyanasoma. Eddembe lino lizingiramu obuyinza okukyusa eddini oba enzikiriza ye, n'obuyinza obubwe ku lulwe oba wamu n'abantu abalala, mu lwatu oba mu kyama, okwolesa eddini oba enzikiriza ye, ngayigiriza oba ngateeka mu nkola eddini ye byemulagira, nga asinza oba ngakuuma byemugamba.
+<line_52>	Ekitundu 19.
+<line_53>	Buli muntu wa ddembe okubeera n'endowooza ye era n'okwogera oba okuwandiika nga bwalowooza. Eddembe lino lizingiramu n'ebeetu ery'okugugubira ku ndowooza ye awatali kitaattaagaayizibwa, okusaka okufuna wamu n'okusaasaanya amawulire n'ebirowoozo okuyita mu mikutu gyonnna watali kukomerwa.
+<line_54>	Ekitundu 20.
+<line_55>	1. Buli muntu ayinza okwetaba mu nkugaana ez'eddembe wamu n'abantu abalala.
+<line_56>	2. Tewali n'omu anakakibwanga okwetaba mu nkunganaa awamu n'abantu abalala.
+<line_57>	Ekitundu 21.
+<line_58>	1. Buli muntu waddembe okwetaba mu nfuga y'eggwenga lye.
+<line_59>	2. Buli muntu alina obuyinza obwenkanankana n'obw'omulala obumusobozesa okutuukirira ebitongole bya gavumenti y'ensi ye ebiweereza abantu bonna awatali kukugirwa.
+<line_60>	3. [missing]
+<line_61>	Ekitundu 22.
+<line_62>	Buli muntu wa ggwanga alina obuyinza okutuula ne bantu banne ngatebenkedde mu ddembe. Kino kimusobozese okutuuka ku biruubirirwa eby'ekitiibwa by'obuntun'okulongongoosa empisa ze, okuyita mu kukola kw'eggwanga lye oba okukolagana n'awamanga nga amalala, okusinziira ku nteekateeka n'enkozesa 'obugagga bwe'eggwanga mu by'enfuna, ey'embeera z'abantu n'eby'obuwangwa ebitayinza kwewalika mu kukulakulana kuno.
+<line_63>	Ekitundu 23.
+<line_64>	1. Buli muntu alina eddembe n'obuyinza okukola. Ateekwa okwerondera ekika ky'omulimu ekimuggyamu era ekirina embeera emusobozesa okukola obulungi, wamu n'okukirizibwa oba okuyambibwa singa omulimu ogwo gumuweddeko.
+<line_65>	2. Buli mukozi ateekwa okussasulwa empeera entuufu emuggyamu, emusobozesa ye yennyini n'abantu ab'amaka ge okweyimirizawo nga abantu balamu. Bwekiba kyetagisa empeera y'omukozi eyinza okwongerezebwako ensako endala ezimusobozesa okwetaasa ebyo ebimugwako ng'omuntu nga tabyetegekedde.
+<line_66>	3. [missing]
+<line_67>	4. [missing]
+<line_68>	Ekitundu 24.
+<line_69>	Buli muntu ateekwa okuwummula n'okuweera. Asaana akole essawa zakigero buli lunaku era abeere n'ekiseera eky'okwewummuzaamu buli mwaka, kyokka nga empeera ye ey'ekiseera ekyo emuweebwa.
+<line_70>	Ekitundu 25.
+<line_71>	1. Buli muntu ateekwa okubeera n'omutindo gw'obulamu ogumusobozesa okubeerawo nga mulamu bulungi mu mubiri , ye yennyini n'abantu abamakage, ng'afuna emmere, ebyambalo, ennyumba n'okujjanjabwa singa alwadde era nga asobola okweyambisa ebyo gavumenti y'eggwanga lye by'ekolera abantu baayo okusitula embeera y'obulamu bwabe. (Social Services). Buli muntu, asaana okuyambibwa aleme kweralikirira bwaba nga omulimu gumuweddeko, oba afuuse kateyaamba oba afuuse Ssemwandu oba Nnamwandu oba ngatuusibbwa mu mbeera etemusobozesa kufuna nsiimbi kyokka nga kino siyakyeretedde yekka.
+<line_72>	2. Abakyala abazadde wamu n'abaana bateekwa okulabirirwa n'okuyambibwa mu ngeri ey'enjawulo. Abaana bonna oba bazadde baabwe bafumbo mu mateeka oba si bafumbo bagwana okulabirirwa kyenkanyi nga abantu.
+<line_73>	Ekitundu 26.
+<line_74>	1. Buli muntu ateekwa okuyigirizibwa. Okuyigizibwa kunabanga kwa bwerere mu myaka egisooka ne mu masomero agasookerwamu. Okuyigirizibwa okusookerwako kunabanga kwa buwaze. Amasomero agayigiriza eby'emikonono n'emirimu egy'ekikugu ganaateekebwangawo, era buli muntu alina ebisannizo n'obusobozi anaweebwanga omukisa okusomera mu magunjukiro agawaggulu.
+<line_75>	2. Ebyenjigiliza binaluubiriranga okugunjula abantu muby'amagezi n'empisa nga biteeka essira ku kusaamu ekitiibwa eddembe ly'obuntu n'emisingi gyalyo. Binakubirizanga okuteegeeragana okw'abantu ab'ensi n'eddini ez'enjawulo; era binakolaganiranga wamu n'ekibiina ky'Amawanga Amagatte mu kuleetawo emirembe mu baantu.
+<line_76>	3. [missing]
+<line_77>	Ekitundu 27.
+<line_78>	1. Buli muntu waddembe okwetaba mu by'obuwangwa ebyensiye era n'okusanyukira ebikolebwa abalina amagezi oba ebitone ebyobuwangwa, n'okugabana ku miganyulo egivudde mukukulakulana kwa sayansi.
+<line_79>	2. Buli muntu agwanidde okutaasibwa okuva mu kabi akayinza okutuuka ku mpisa ze oba kwebyo ebimusanyusa mu nsi, kino nga kisinziira ku magezi aga sayansi ebitabo ebibi oba ebifaananyi eby'ekigwenyufu ebiba bikoledwa abaantu.
+<line_80>	Ekitundu 28.
+<line_81>	Embeera y'abantu ab'eggwanga lye oba ab'omumawanga amalala ng'esobozesa omuntu okufuna eddembe ly'obuntu nga bwe liwandiikiddwa mu KIRAGIRO kino.
+<line_82>	Ekitundu 29.
+<line_83>	1. Buli muntu alina obuvunanyizibwa eri abantu b'ensi ye, kubanga bano bokka abamusobozesa okukikukulanya mumpisa ne mungeri endala zonna.
+<line_84>	2. Omuntu nga akaayanira eddembe lye ery'obuntu ekinamukolangako kyokka ge mateeka ago agateekebwawo okunyweza, okutongoza wamu n'okusaamu ekitiibwa eddembe ly'abalala n'okukuuma empisa ennungi mu bwenkanya oba okukuuma eddembe lya bonna oba amateeka ago ogakuuma obulungi bwa abantu bonna ab'eggwanga eriddukanyizibwa ku demokolasi.
+<line_85>	3. [missing]
+<line_86>	Ekitundu 30.
+<line_87>	Tewali nsonga yonna mu KIRANGIRIRO kino enetapoutibwanga mu ngeri etegeeza nti ewa ebbeetu abantu b'eggwanga oba ekibinja ky' abantu okwenyigira oba okwetaba mu kikolwa kyonna ekigenderera okuzikiriza eddembe ly'obuntu eriwandiikiddwa mu KIRANGIRIRO kino.
