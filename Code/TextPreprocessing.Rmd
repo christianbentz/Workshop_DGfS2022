@@ -9,22 +9,29 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+# Session Info
+Give the session info (reduced).
+```{r, echo = F}
+# R version
+sessionInfo()$R.version$version.string
+# platform
+sessionInfo()$R.version$platform 
 ```
 
-## Including Plots
+# Load Libraries
+If the respective libraries are not installed yet, you need to install them using, for example, the command: install.packages("ggplot2").
+```{r, message = FALSE}
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+# Text Preprocessing
+
+## List files
+Create list with all the files which are about to be processed. 
+```{r}
+# file list for 100LC texts
+file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/", 
+                        recursive = T, full.names = T)
+head(file.list)
+length(file.list)
+```
