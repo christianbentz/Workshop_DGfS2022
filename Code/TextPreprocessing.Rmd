@@ -30,7 +30,7 @@ library(readr)
 ## List files
 Create list with all the files which are about to be processed. 
 ```{r}
-# file list for 100LC texts
+# file list for udhr and voynich texts
 file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/original", 
                         recursive = T, full.names = T)
 head(file.list)
@@ -46,8 +46,8 @@ start_time <- Sys.time()
 counter <- 0
 
 # use for-loop to run through all files
-for (file in file.list) 
-{ # loading textfile ("skip" specifies the number of lines to skip, whereas
+for (file in file.list) { 
+  # loading textfile ("skip" specifies the number of lines to skip, whereas
   # nmax gives the max number of lines to read.)
   textfile <- scan(file, what = "char", quote = "", comment.char = "", 
                    encoding = "UTF-8", sep = "\n" , skip = 8, nmax = 100) 

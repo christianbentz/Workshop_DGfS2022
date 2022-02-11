@@ -1,0 +1,90 @@
+---
+title: "Unigram Entropy Estimation"
+author: "Chris Bentz"
+date: "11/02/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Session Info
+Give the session info (reduced).
+```{r, echo = F}
+# R version
+sessionInfo()$R.version$version.string
+# platform
+sessionInfo()$R.version$platform 
+```
+
+## Load libraries
+If the libraries are not installed yet, you need to install them using, for example, the command: install.packages("ggplot2").
+```{r}
+library(stringr)
+library(entropy)
+library(quanteda)
+```
+
+# List files
+Create list with all the files which are about to be processed. 
+```{r}
+# file list for processed texts
+file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/processed", 
+                        recursive = T, full.names = T)
+head(file.list)
+length(file.list)
+```
+# Character Entropy Calculation 
+```{r}
+# set counter
+counter = 0
+
+# initialize data frame to append results to
+entropy.df <- data.frame(filename = character(0), subcorpus = character(0), 
+                         id = character(0), h.unigrams = numeric (0),
+                         h.bigrams = numeric(0), h.trigrams = numeric(0)) 
+
+# start time
+start_time <- Sys.time()
+for (file in file.list) {
+  # loading textfile ("skip" specifies the number of lines to skip, whereas
+  # nmax gives the max number of lines to read.)
+  chars <- scan(file, what = "char", quote = "", comment.char = "", 
+                   encoding = "UTF-8", sep = " " , skip = 0, nmax = F) 
+  # get filename
+  filename <- basename(file) 
+  # get subcorpus category
+  subcorpus <- sub("_.*", "", filename)
+  # get three letter identifier from file name
+  id <- substr(str_extract(filename, "_.*_"), 2, 4) 
+  
+  # estimate entropy for character unigrams
+  chars.uni.df <- as.data.frame(table(chars))
+  h.unigrams <- entropy(chars.uni.df$Freq, method = "ML", unit = "log2")
+  
+  # estimate entropy for character bigrams
+  chars.bi <- char_ngrams(chars, n = 2, concatenator = "")
+  chars.bi.df <- as.data.frame(table(chars.bi)) 
+  h.bigrams <- entropy(chars.bi.df$Freq, method = "ML", unit = "log2")
+  
+  # estimate entropy for character trigrams
+  chars.tri <- char_ngrams(chars, n = 3, concatenator = "")
+  chars.tri.df <- as.data.frame(table(chars.tri)) 
+  h.trigrams <- entropy(chars.tri.df$Freq, method = "ML", unit = "log2")
+  
+  # append results to data frame
+  local.df <- data.frame(filename, subcorpus, id, h.unigrams, h.bigrams, h.trigrams)
+  entropy.df <- rbind(entropy.df, local.df)
+  # counter
+  counter <- counter + 1
+  print(counter)
+}
+end_time <- Sys.time()
+end_time - start_time
+```
+# Safe outputs to file
+```{r}
+write.csv(entropy.df, "~/Github/Workshop_DGfS2022/Results/Application1/entropyEstimations.csv", row.names = F, append = F)
+```
+
