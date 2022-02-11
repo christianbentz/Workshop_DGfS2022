@@ -21,7 +21,8 @@ sessionInfo()$R.version$platform
 # Load Libraries
 If the respective libraries are not installed yet, you need to install them using, for example, the command: install.packages("ggplot2").
 ```{r, message = FALSE}
-
+library(gsubfn)
+library(readr)
 ```
 
 # Text Preprocessing
@@ -30,8 +31,47 @@ If the respective libraries are not installed yet, you need to install them usin
 Create list with all the files which are about to be processed. 
 ```{r}
 # file list for 100LC texts
-file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/", 
+file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/original", 
                         recursive = T, full.names = T)
 head(file.list)
 length(file.list)
+```
+
+## Split on UTF-8 Characters
+```{r}
+# capture starting time
+start_time <- Sys.time()
+
+# set a counter 
+counter <- 0
+
+# use for-loop to run through all files
+for (file in file.list) 
+{ # loading textfile ("skip" specifies the number of lines to skip, whereas
+  # nmax gives the max number of lines to read.)
+  textfile <- scan(file, what = "char", quote = "", comment.char = "", 
+                   encoding = "UTF-8", sep = "\n" , skip = 8, nmax = 100) 
+  # remove tabs, parentheses, and further symbols that cause processing issues
+  textfile <- gsubfn(".", list("\t" = "", "(" = "", ")" = "", "]" = "",
+                              "[" = "", "}" = "",  "{" = "", "*" = "", "+" = ""), textfile)
+  # remove line annotations marked by '<>'
+  textfile <- gsub("<.*>", "", textfile) 
+  # get filename
+  filename <- basename(file)
+  print(filename)
+  # split the textfile into individual utf-8 characters. The output of strsplit() 
+  # is a list, so it needs to be "unlisted"" to get a vector. Note that white spaces are
+  # counted as utf-8 characters here.
+  chars <- unlist(strsplit(textfile, ""))
+  chars <- chars[chars != " "] # remove white spaces from character vector
+  chars <- chars[!is.na(chars)] # remove NAs for vectors which are already shorter than n
+  # write characters to file
+  output.file <- paste("~/Github/Workshop_DGfS2022/Data/processed/", filename, sep = "")
+  write_lines(chars, output.file, sep = " ")
+  # counter
+  counter <- counter + 1
+  print(counter)
+}
+end_time <- Sys.time()
+end_time - start_time
 ```
