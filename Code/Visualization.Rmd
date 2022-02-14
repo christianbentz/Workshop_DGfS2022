@@ -1,0 +1,54 @@
+---
+title: "Entropy Visualization"
+author: "Chris Bentz"
+date: "14/02/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Session Info
+Give the session info (reduced).
+```{r, echo = F}
+# R version
+sessionInfo()$R.version$version.string
+# platform
+sessionInfo()$R.version$platform 
+```
+
+## Load libraries
+If the libraries are not installed yet, you need to install them using, for example, the command: install.packages("ggplot2").
+```{r}
+library(ggplot2)
+library(ggrepel)
+```
+
+## Load Data
+Load unigram, bigram and trigram estimations which were generated in EntropyEstimation.Rmd.
+```{r}
+h.est <- read.csv(file = "~/Github/Workshop_DGfS2022/Results/Application1/entropyEstimations.csv")
+```
+
+## Plots
+
+Plot estimated unigram entropies vs bigram entropies.
+```{r}
+h.plot <- ggplot(h.est, aes(x = h.unigrams, y = h.bigrams, 
+                                        colour = subcorpus)) + 
+  geom_point(alpha = 0.8, size  = 1) +
+  geom_rug() +
+  geom_label_repel(aes(label = id), label.size = 0.2, size = 3) + 
+  xlim(min(h.est$h.unigrams-1), max(h.est$h.unigrams+1)) +
+  ylim(min(h.est$h.bigrams-1), max(h.est$h.bigrams+1)) +
+  labs(x = "Unigram Entropy for Characters", 
+       y = "Bigram Entropy for Characters") 
+h.plot
+```
+
+Safe complete figure to file.
+```{r}
+ggsave("~/Github/Workshop_DGfS2022/Figures/entropyPlot.pdf", h.plot, dpi = 300, 
+       scale = 1, device = cairo_pdf)
+```
