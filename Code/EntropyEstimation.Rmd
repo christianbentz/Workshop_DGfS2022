@@ -35,6 +35,7 @@ file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/processed",
 head(file.list)
 length(file.list)
 ```
+
 # Character Entropy Calculation 
 ```{r}
 # set counter
