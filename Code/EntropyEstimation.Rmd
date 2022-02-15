@@ -36,7 +36,8 @@ head(file.list)
 length(file.list)
 ```
 
-# Character Entropy Calculation 
+# Character Entropy Estimation
+Estimate character entropy by using relative frequencies of characters in the text.
 ```{r}
 # set counter
 counter = 0
