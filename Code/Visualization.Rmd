@@ -31,9 +31,8 @@ Load unigram, bigram and trigram estimations which were generated in EntropyEsti
 h.est <- read.csv(file = "~/Github/Workshop_DGfS2022/Results/Application1/entropyEstimations.csv")
 ```
 
-## Plots
-
-Plot estimated unigram entropies vs bigram entropies.
+# Scatterplots
+Create a scatterplot with entropy estimations on the x-axis and y-axis. This gives a visual impression where each text resides in terms of estimated entropies.
 ```{r}
 h.plot <- ggplot(h.est, aes(x = h.unigrams, y = h.bigrams, 
                                         colour = subcorpus)) + 
