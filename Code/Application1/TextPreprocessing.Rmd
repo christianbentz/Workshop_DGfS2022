@@ -31,10 +31,10 @@ library(readr)
 Create list with all the files which are about to be processed. 
 ```{r}
 # file list for udhr and voynich texts
-file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/Application1/original", 
+fileList <- list.files(path = "~/Github/Workshop_DGfS2022/Data/Application1/original", 
                         recursive = T, full.names = T)
-head(file.list)
-length(file.list)
+head(fileList)
+length(fileList)
 ```
 
 ## Split on UTF-8 Characters
@@ -47,27 +47,31 @@ start_time <- Sys.time()
 counter <- 0
 
 # use for-loop to run through all files
-for (file in file.list) { 
+for (file in fileList) { 
   # loading textfile ("skip" specifies the number of lines to skip, whereas
   # nmax gives the max number of lines to read.)
   textfile <- scan(file, what = "char", quote = "", comment.char = "", 
                    encoding = "UTF-8", sep = "\n" , skip = 8, nmax = 100) 
   # remove tabs, parentheses, and further symbols that cause processing issues
-  textfile <- gsubfn(".", list("\t" = "", "(" = "", ")" = "", "]" = "",
-                              "[" = "", "}" = "",  "{" = "", "*" = "", "+" = ""), textfile)
+  textfile <- gsubfn(".", list("\t" = "", "(" = "", ")" = "", 
+                               "]" = "", "[" = "", "}" = "", 
+                               "{" = "", "*" = "", "+" = ""), textfile)
   # remove line annotations marked by '<>'
   textfile <- gsub("<.*>", "", textfile) 
   # get filename
   filename <- basename(file)
   print(filename)
-  # split the textfile into individual utf-8 characters. The output of strsplit() 
-  # is a list, so it needs to be "unlisted"" to get a vector. Note that white spaces are
-  # counted as utf-8 characters here.
+  # split the textfile into individual utf-8 characters. 
+  # The output of strsplit() is a list, so it needs to be "unlisted" 
+  # to get a vector. Note that white spaces are  counted as utf-8 characters.
   chars <- unlist(strsplit(textfile, ""))
-  chars <- chars[chars != " "] # remove white spaces from character vector
-  chars <- chars[!is.na(chars)] # remove NAs for vectors which are already shorter than n
+  # remove white spaces from character vector
+  chars <- chars[chars != " "]
+  # remove NAs for vectors which are already shorter than n
+  chars <- chars[!is.na(chars)] 
   # write characters to file
-  output.file <- paste("~/Github/Workshop_DGfS2022/Data/Application1/processed/", filename, sep = "")
+  output.file <- paste("~/Github/Workshop_DGfS2022/Data/Application1/processed/", 
+                       filename, sep = "")
   write_lines(chars, output.file, sep = " ")
   # counter
   counter <- counter + 1

@@ -189,16 +189,16 @@ library(readr)</code></pre>
 <h2>List files</h2>
 <p>Create list with all the files which are about to be processed.</p>
 <pre class="r"><code># file list for udhr and voynich texts
-file.list &lt;- list.files(path = &quot;~/Github/Workshop_DGfS2022/Data/Application1/original&quot;, 
+fileList &lt;- list.files(path = &quot;~/Github/Workshop_DGfS2022/Data/Application1/original&quot;, 
                         recursive = T, full.names = T)
-head(file.list)</code></pre>
+head(fileList)</code></pre>
 <pre><code>## [1] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/unclassified_voy_0001.txt&quot;
 ## [2] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/writing_aii_0001.txt&quot;     
 ## [3] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/writing_arb_0001.txt&quot;     
 ## [4] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/writing_azj_0001.txt&quot;     
 ## [5] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/writing_azj_0002.txt&quot;     
 ## [6] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/writing_ben_0001.txt&quot;</code></pre>
-<pre class="r"><code>length(file.list)</code></pre>
+<pre class="r"><code>length(fileList)</code></pre>
 <pre><code>## [1] 51</code></pre>
 </div>
 <div id="split-on-utf-8-characters" class="section level2">
@@ -211,27 +211,31 @@ start_time &lt;- Sys.time()
 counter &lt;- 0
 
 # use for-loop to run through all files
-for (file in file.list) { 
+for (file in fileList) { 
   # loading textfile (&quot;skip&quot; specifies the number of lines to skip, whereas
   # nmax gives the max number of lines to read.)
   textfile &lt;- scan(file, what = &quot;char&quot;, quote = &quot;&quot;, comment.char = &quot;&quot;, 
                    encoding = &quot;UTF-8&quot;, sep = &quot;\n&quot; , skip = 8, nmax = 100) 
   # remove tabs, parentheses, and further symbols that cause processing issues
-  textfile &lt;- gsubfn(&quot;.&quot;, list(&quot;\t&quot; = &quot;&quot;, &quot;(&quot; = &quot;&quot;, &quot;)&quot; = &quot;&quot;, &quot;]&quot; = &quot;&quot;,
-                              &quot;[&quot; = &quot;&quot;, &quot;}&quot; = &quot;&quot;,  &quot;{&quot; = &quot;&quot;, &quot;*&quot; = &quot;&quot;, &quot;+&quot; = &quot;&quot;), textfile)
+  textfile &lt;- gsubfn(&quot;.&quot;, list(&quot;\t&quot; = &quot;&quot;, &quot;(&quot; = &quot;&quot;, &quot;)&quot; = &quot;&quot;, 
+                               &quot;]&quot; = &quot;&quot;, &quot;[&quot; = &quot;&quot;, &quot;}&quot; = &quot;&quot;, 
+                               &quot;{&quot; = &quot;&quot;, &quot;*&quot; = &quot;&quot;, &quot;+&quot; = &quot;&quot;), textfile)
   # remove line annotations marked by &#39;&lt;&gt;&#39;
   textfile &lt;- gsub(&quot;&lt;.*&gt;&quot;, &quot;&quot;, textfile) 
   # get filename
   filename &lt;- basename(file)
   print(filename)
-  # split the textfile into individual utf-8 characters. The output of strsplit() 
-  # is a list, so it needs to be &quot;unlisted&quot;&quot; to get a vector. Note that white spaces are
-  # counted as utf-8 characters here.
+  # split the textfile into individual utf-8 characters. 
+  # The output of strsplit() is a list, so it needs to be &quot;unlisted&quot; 
+  # to get a vector. Note that white spaces are  counted as utf-8 characters.
   chars &lt;- unlist(strsplit(textfile, &quot;&quot;))
-  chars &lt;- chars[chars != &quot; &quot;] # remove white spaces from character vector
-  chars &lt;- chars[!is.na(chars)] # remove NAs for vectors which are already shorter than n
+  # remove white spaces from character vector
+  chars &lt;- chars[chars != &quot; &quot;]
+  # remove NAs for vectors which are already shorter than n
+  chars &lt;- chars[!is.na(chars)] 
   # write characters to file
-  output.file &lt;- paste(&quot;~/Github/Workshop_DGfS2022/Data/Application1/processed/&quot;, filename, sep = &quot;&quot;)
+  output.file &lt;- paste(&quot;~/Github/Workshop_DGfS2022/Data/Application1/processed/&quot;, 
+                       filename, sep = &quot;&quot;)
   write_lines(chars, output.file, sep = &quot; &quot;)
   # counter
   counter &lt;- counter + 1
@@ -341,7 +345,7 @@ for (file in file.list) {
 ## [1] 51</code></pre>
 <pre class="r"><code>end_time &lt;- Sys.time()
 end_time - start_time</code></pre>
-<pre><code>## Time difference of 12.38892 secs</code></pre>
+<pre><code>## Time difference of 12.31534 secs</code></pre>
 </div>
 </div>
 
