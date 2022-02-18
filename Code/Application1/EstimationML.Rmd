@@ -1,5 +1,5 @@
 ---
-title: "Unigram Entropy Estimation"
+title: "Unigram Entropy Estimation with Maximum Likelihood Method"
 author: "Chris Bentz"
 date: "18/02/2022"
 output: html_document
@@ -30,15 +30,18 @@ library(quanteda)
 Create list with all the files which are about to be processed. 
 ```{r}
 # file list for processed texts
-file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/Application1/processed", 
+filelist <- list.files(path = "~/Github/Workshop_DGfS2022/Data/Application1/processed", 
                         recursive = T, full.names = T)
-head(file.list)
-length(file.list)
+head(filelist)
+length(filelist)
 ```
 
 ## Character Entropy Estimation
 Estimate character entropy by using relative frequencies of characters in the text.
 ```{r}
+# start time
+start_time <- Sys.time()
+
 # set counter
 counter = 0
 
@@ -47,9 +50,7 @@ entropy.df <- data.frame(filename = character(0), subcorpus = character(0),
                          id = character(0), h.unigrams = numeric (0),
                          h.bigrams = numeric(0), h.trigrams = numeric(0)) 
 
-# start time
-start_time <- Sys.time()
-for (file in file.list) {
+for (file in filelist) {
   # loading textfile ("skip" specifies the number of lines to skip, whereas
   # nmax gives the max number of lines to read.)
   chars <- scan(file, what = "char", quote = "", comment.char = "", 
@@ -76,7 +77,8 @@ for (file in file.list) {
   h.trigrams <- entropy(chars.tri.df$Freq, method = "ML", unit = "log2")
   
   # append results to data frame
-  local.df <- data.frame(filename, subcorpus, id, h.unigrams, h.bigrams, h.trigrams)
+  local.df <- data.frame(filename, subcorpus, id, h.unigrams, 
+                         h.bigrams, h.trigrams)
   entropy.df <- rbind(entropy.df, local.df)
   # counter
   counter <- counter + 1
