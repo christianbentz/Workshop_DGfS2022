@@ -1,0 +1,72 @@
+---
+title: "Word Order Entropy Visualization"
+author: "Chris Bentz"
+date: "18/02/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Session Info
+Give the session info (reduced).
+```{r, echo = F}
+# R version
+sessionInfo()$R.version$version.string
+# platform
+sessionInfo()$R.version$platform 
+```
+
+## Load Libraries
+If the libraries are not installed yet, you need to install them using, for example, the command: install.packages("ggplot2").
+```{r, message = F}
+library(ggplot2)
+library(ggrepel)
+```
+
+## Load Data
+Load file with ML estimated word order entropies and unigram orthographic word entropies across ca. 1000 languages.
+```{r}
+h.est.wo <- read.csv(file = "~/Github/Workshop_DGfS2022/Results/Application2/wordorder_tokens.csv")
+head(h.est.wo)
+```
+
+### Data Cleaning
+Use only data from Parallel Bible Corpus (this also removes NAs). Also, languages might be included/excluded according to how many sentences they have in the word order variable.
+```{r}
+# use PBC
+h.est.wo.clean <- h.est.wo[h.est.wo$corpus == "PBC", ]
+# only use languages with more than x sentences (in the word order variable)
+h.est.wo.clean <- h.est.wo.clean[h.est.wo.clean$No_Sentences > 250, ]
+# check how many rows, i.e. languages are left
+nrow(h.est.wo.clean)
+```
+
+## Scatterplots
+Create scatterplots with entropy estimations on the x-axis and y-axis.
+
+### Unigram Entropy of Words and Entropy of Subject and Object Ordering
+```{r}
+h.plot <- ggplot(h.est.wo.clean, aes(x = H_ML, y = H_SO)) + 
+  geom_point(alpha = 0.8, size  = 1) +
+  geom_smooth(method = "lm") +
+  geom_label_repel(aes(label = ISO), label.size = 0.2, size = 3) + 
+  labs(x = "Unigram Entropy for Words (ML Estimate)", 
+       y = "Entropy of SO Order (ML Estimate)")
+h.plot
+```
+
+## Linear model
+Fit a simple linear model which corresponds to the linear model (lm) smoother in the scatterplot.
+```{r}
+model <- lm(H_SO~H_ML, data = h.est.wo.clean)
+summary(model)
+```
+
+## Safe Figures
+Safe complete figures to file.
+```{r}
+# unigrams
+ggsave("~/Github/Workshop_DGfS2022/Figures/WordOrderEntropyPlot.pdf", h.plot, dpi = 300, 
+       scale = 1, device = cairo_pdf)
