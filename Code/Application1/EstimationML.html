@@ -11,7 +11,6 @@
 
 <meta name="author" content="Chris Bentz" />
 
-<meta name="date" content="2022-11-02" />
 
 <title>Unigram Entropy Estimation</title>
 
@@ -167,16 +166,17 @@ pre code {
 
 <h1 class="title toc-ignore">Unigram Entropy Estimation</h1>
 <h4 class="author">Chris Bentz</h4>
-<h4 class="date">11/02/2022</h4>
+<h4 class="date">18/02/2022</h4>
 
 </div>
 
 
-<div id="session-info" class="section level1">
-<h1>Session Info</h1>
+<div id="session-info" class="section level2">
+<h2>Session Info</h2>
 <p>Give the session info (reduced).</p>
 <pre><code>## [1] &quot;R version 3.6.3 (2020-02-29)&quot;</code></pre>
 <pre><code>## [1] &quot;x86_64-pc-linux-gnu&quot;</code></pre>
+</div>
 <div id="load-libraries" class="section level2">
 <h2>Load libraries</h2>
 <p>If the libraries are not installed yet, you need to install them using, for example, the command: install.packages(“ggplot2”).</p>
@@ -189,25 +189,25 @@ library(quanteda)</code></pre>
 <pre><code>## Parallel computing: 16 of 16 threads used.</code></pre>
 <pre><code>## See https://quanteda.io for tutorials and examples.</code></pre>
 </div>
-</div>
-<div id="list-files" class="section level1">
-<h1>List files</h1>
+<div id="list-files" class="section level2">
+<h2>List files</h2>
 <p>Create list with all the files which are about to be processed.</p>
 <pre class="r"><code># file list for processed texts
-file.list &lt;- list.files(path = &quot;~/Github/Workshop_DGfS2022/Data/processed&quot;, 
+file.list &lt;- list.files(path = &quot;~/Github/Workshop_DGfS2022/Data/Application1/processed&quot;, 
                         recursive = T, full.names = T)
 head(file.list)</code></pre>
-<pre><code>## [1] &quot;/home/chris/Github/Workshop_DGfS2022/Data/processed/unclassified_voy_0001.txt&quot;
-## [2] &quot;/home/chris/Github/Workshop_DGfS2022/Data/processed/writing_aii_0001.txt&quot;     
-## [3] &quot;/home/chris/Github/Workshop_DGfS2022/Data/processed/writing_arb_0001.txt&quot;     
-## [4] &quot;/home/chris/Github/Workshop_DGfS2022/Data/processed/writing_azj_0001.txt&quot;     
-## [5] &quot;/home/chris/Github/Workshop_DGfS2022/Data/processed/writing_azj_0002.txt&quot;     
-## [6] &quot;/home/chris/Github/Workshop_DGfS2022/Data/processed/writing_ben_0001.txt&quot;</code></pre>
+<pre><code>## [1] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/processed/unclassified_voy_0001.txt&quot;
+## [2] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/processed/writing_aii_0001.txt&quot;     
+## [3] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/processed/writing_arb_0001.txt&quot;     
+## [4] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/processed/writing_azj_0001.txt&quot;     
+## [5] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/processed/writing_azj_0002.txt&quot;     
+## [6] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/processed/writing_ben_0001.txt&quot;</code></pre>
 <pre class="r"><code>length(file.list)</code></pre>
 <pre><code>## [1] 51</code></pre>
 </div>
-<div id="character-entropy-calculation" class="section level1">
-<h1>Character Entropy Calculation</h1>
+<div id="character-entropy-estimation" class="section level2">
+<h2>Character Entropy Estimation</h2>
+<p>Estimate character entropy by using relative frequencies of characters in the text.</p>
 <pre class="r"><code># set counter
 counter = 0
 
@@ -304,13 +304,12 @@ for (file in file.list) {
 ## [1] 51</code></pre>
 <pre class="r"><code>end_time &lt;- Sys.time()
 end_time - start_time</code></pre>
-<pre><code>## Time difference of 1.064322 secs</code></pre>
+<pre><code>## Time difference of 1.059414 secs</code></pre>
 </div>
-<div id="safe-outputs-to-file" class="section level1">
-<h1>Safe outputs to file</h1>
-<pre class="r"><code>write.csv(entropy.df, &quot;~/Github/Workshop_DGfS2022/Results/Application1/entropyEstimations.csv&quot;, row.names = F, append = F)</code></pre>
-<pre><code>## Warning in write.csv(entropy.df, &quot;~/Github/Workshop_DGfS2022/Results/
-## Application1/entropyEstimations.csv&quot;, : attempt to set &#39;append&#39; ignored</code></pre>
+<div id="safe-outputs" class="section level2">
+<h2>Safe outputs</h2>
+<p>Write ouput (data frame) to a comma separated value (csv) file.</p>
+<pre class="r"><code>write.csv(entropy.df, &quot;~/Github/Workshop_DGfS2022/Results/Application1/entropy_ML.csv&quot;, row.names = F)</code></pre>
 </div>
 
 

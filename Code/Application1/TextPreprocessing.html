@@ -11,7 +11,6 @@
 
 <meta name="author" content="Chris Bentz" />
 
-<meta name="date" content="2022-10-02" />
 
 <title>Text Preprocessing</title>
 
@@ -167,7 +166,7 @@ pre code {
 
 <h1 class="title toc-ignore">Text Preprocessing</h1>
 <h4 class="author">Chris Bentz</h4>
-<h4 class="date">10/02/2022</h4>
+<h4 class="date">18/02/2022</h4>
 
 </div>
 
@@ -180,7 +179,7 @@ pre code {
 </div>
 <div id="load-libraries" class="section level1">
 <h1>Load Libraries</h1>
-<p>If the respective libraries are not installed yet, you need to install them using, for example, the command: install.packages(“ggplot2”).</p>
+<p>If the respective libraries are not installed yet, you need to install them using, for example, the command: install.packages(“gsubfn”).</p>
 <pre class="r"><code>library(gsubfn)
 library(readr)</code></pre>
 </div>
@@ -189,21 +188,22 @@ library(readr)</code></pre>
 <div id="list-files" class="section level2">
 <h2>List files</h2>
 <p>Create list with all the files which are about to be processed.</p>
-<pre class="r"><code># file list for 100LC texts
-file.list &lt;- list.files(path = &quot;~/Github/Workshop_DGfS2022/Data/original&quot;, 
+<pre class="r"><code># file list for udhr and voynich texts
+file.list &lt;- list.files(path = &quot;~/Github/Workshop_DGfS2022/Data/Application1/original&quot;, 
                         recursive = T, full.names = T)
 head(file.list)</code></pre>
-<pre><code>## [1] &quot;/home/chris/Github/Workshop_DGfS2022/Data/original/udhr/writing_aii_0001.txt&quot;
-## [2] &quot;/home/chris/Github/Workshop_DGfS2022/Data/original/udhr/writing_arb_0001.txt&quot;
-## [3] &quot;/home/chris/Github/Workshop_DGfS2022/Data/original/udhr/writing_azj_0001.txt&quot;
-## [4] &quot;/home/chris/Github/Workshop_DGfS2022/Data/original/udhr/writing_azj_0002.txt&quot;
-## [5] &quot;/home/chris/Github/Workshop_DGfS2022/Data/original/udhr/writing_ben_0001.txt&quot;
-## [6] &quot;/home/chris/Github/Workshop_DGfS2022/Data/original/udhr/writing_blt_0001.txt&quot;</code></pre>
+<pre><code>## [1] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/unclassified_voy_0001.txt&quot;
+## [2] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/writing_aii_0001.txt&quot;     
+## [3] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/writing_arb_0001.txt&quot;     
+## [4] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/writing_azj_0001.txt&quot;     
+## [5] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/writing_azj_0002.txt&quot;     
+## [6] &quot;/home/chris/Github/Workshop_DGfS2022/Data/Application1/original/writing_ben_0001.txt&quot;</code></pre>
 <pre class="r"><code>length(file.list)</code></pre>
 <pre><code>## [1] 51</code></pre>
 </div>
 <div id="split-on-utf-8-characters" class="section level2">
 <h2>Split on UTF-8 Characters</h2>
+<p>Remove meta-data header, and split text lines into individual UTF-8 characters.</p>
 <pre class="r"><code># capture starting time
 start_time &lt;- Sys.time()
 
@@ -211,8 +211,8 @@ start_time &lt;- Sys.time()
 counter &lt;- 0
 
 # use for-loop to run through all files
-for (file in file.list) 
-{ # loading textfile (&quot;skip&quot; specifies the number of lines to skip, whereas
+for (file in file.list) { 
+  # loading textfile (&quot;skip&quot; specifies the number of lines to skip, whereas
   # nmax gives the max number of lines to read.)
   textfile &lt;- scan(file, what = &quot;char&quot;, quote = &quot;&quot;, comment.char = &quot;&quot;, 
                    encoding = &quot;UTF-8&quot;, sep = &quot;\n&quot; , skip = 8, nmax = 100) 
@@ -231,118 +231,117 @@ for (file in file.list)
   chars &lt;- chars[chars != &quot; &quot;] # remove white spaces from character vector
   chars &lt;- chars[!is.na(chars)] # remove NAs for vectors which are already shorter than n
   # write characters to file
-  output.file &lt;- paste(&quot;~/Github/Workshop_DGfS2022/Data/processed/&quot;, filename, sep = &quot;&quot;)
+  output.file &lt;- paste(&quot;~/Github/Workshop_DGfS2022/Data/Application1/processed/&quot;, filename, sep = &quot;&quot;)
   write_lines(chars, output.file, sep = &quot; &quot;)
   # counter
   counter &lt;- counter + 1
   print(counter)
 }</code></pre>
-<pre><code>## [1] &quot;writing_aii_0001.txt&quot;
+<pre><code>## [1] &quot;unclassified_voy_0001.txt&quot;
 ## [1] 1
-## [1] &quot;writing_arb_0001.txt&quot;
+## [1] &quot;writing_aii_0001.txt&quot;
 ## [1] 2
-## [1] &quot;writing_azj_0001.txt&quot;
+## [1] &quot;writing_arb_0001.txt&quot;
 ## [1] 3
-## [1] &quot;writing_azj_0002.txt&quot;
+## [1] &quot;writing_azj_0001.txt&quot;
 ## [1] 4
-## [1] &quot;writing_ben_0001.txt&quot;
+## [1] &quot;writing_azj_0002.txt&quot;
 ## [1] 5
-## [1] &quot;writing_blt_0001.txt&quot;
+## [1] &quot;writing_ben_0001.txt&quot;
 ## [1] 6
-## [1] &quot;writing_bod_0001.txt&quot;
+## [1] &quot;writing_blt_0001.txt&quot;
 ## [1] 7
-## [1] &quot;writing_bos_0001.txt&quot;
+## [1] &quot;writing_bod_0001.txt&quot;
 ## [1] 8
-## [1] &quot;writing_bos_0002.txt&quot;
+## [1] &quot;writing_bos_0001.txt&quot;
 ## [1] 9
-## [1] &quot;writing_chr_0001.txt&quot;
+## [1] &quot;writing_bos_0002.txt&quot;
 ## [1] 10
-## [1] &quot;writing_cmn_0001.txt&quot;
+## [1] &quot;writing_chr_0001.txt&quot;
 ## [1] 11
-## [1] &quot;writing_cmn_0002.txt&quot;
+## [1] &quot;writing_cmn_0001.txt&quot;
 ## [1] 12
-## [1] &quot;writing_csw_0001.txt&quot;
+## [1] &quot;writing_cmn_0002.txt&quot;
 ## [1] 13
-## [1] &quot;writing_div_0001.txt&quot;
+## [1] &quot;writing_csw_0001.txt&quot;
 ## [1] 14
-## [1] &quot;writing_ell_0001.txt&quot;
+## [1] &quot;writing_div_0001.txt&quot;
 ## [1] 15
-## [1] &quot;writing_eng_0001.txt&quot;
+## [1] &quot;writing_ell_0001.txt&quot;
 ## [1] 16
-## [1] &quot;writing_epo_0001.txt&quot;
+## [1] &quot;writing_eng_0001.txt&quot;
 ## [1] 17
-## [1] &quot;writing_eus_0001.txt&quot;
+## [1] &quot;writing_epo_0001.txt&quot;
 ## [1] 18
-## [1] &quot;writing_gaz_0001.txt&quot;
+## [1] &quot;writing_eus_0001.txt&quot;
 ## [1] 19
-## [1] &quot;writing_guj_0001.txt&quot;
+## [1] &quot;writing_gaz_0001.txt&quot;
 ## [1] 20
-## [1] &quot;writing_heb_0001.txt&quot;
+## [1] &quot;writing_guj_0001.txt&quot;
 ## [1] 21
-## [1] &quot;writing_hin_0001.txt&quot;
+## [1] &quot;writing_heb_0001.txt&quot;
 ## [1] 22
-## [1] &quot;writing_hye_0001.txt&quot;
+## [1] &quot;writing_hin_0001.txt&quot;
 ## [1] 23
-## [1] &quot;writing_ibb_0001.txt&quot;
+## [1] &quot;writing_hye_0001.txt&quot;
 ## [1] 24
-## [1] &quot;writing_iii_0001.txt&quot;
+## [1] &quot;writing_ibb_0001.txt&quot;
 ## [1] 25
-## [1] &quot;writing_ike_0001.txt&quot;
+## [1] &quot;writing_iii_0001.txt&quot;
 ## [1] 26
-## [1] &quot;writing_jav_0001.txt&quot;
+## [1] &quot;writing_ike_0001.txt&quot;
 ## [1] 27
-## [1] &quot;writing_jav_0002.txt&quot;
+## [1] &quot;writing_jav_0001.txt&quot;
 ## [1] 28
-## [1] &quot;writing_jpn_0001.txt&quot;
+## [1] &quot;writing_jav_0002.txt&quot;
 ## [1] 29
-## [1] &quot;writing_kal_0001.txt&quot;
+## [1] &quot;writing_jpn_0001.txt&quot;
 ## [1] 30
-## [1] &quot;writing_kan_0001.txt&quot;
+## [1] &quot;writing_kal_0001.txt&quot;
 ## [1] 31
-## [1] &quot;writing_kat_0001.txt&quot;
+## [1] &quot;writing_kan_0001.txt&quot;
 ## [1] 32
-## [1] &quot;writing_khm_0001.txt&quot;
+## [1] &quot;writing_kat_0001.txt&quot;
 ## [1] 33
-## [1] &quot;writing_kkh_0001.txt&quot;
+## [1] &quot;writing_khm_0001.txt&quot;
 ## [1] 34
-## [1] &quot;writing_kor_0001.txt&quot;
+## [1] &quot;writing_kkh_0001.txt&quot;
 ## [1] 35
-## [1] &quot;writing_lao_0001.txt&quot;
+## [1] &quot;writing_kor_0001.txt&quot;
 ## [1] 36
-## [1] &quot;writing_lug_0001.txt&quot;
+## [1] &quot;writing_lao_0001.txt&quot;
 ## [1] 37
-## [1] &quot;writing_mal_0001.txt&quot;
+## [1] &quot;writing_lug_0001.txt&quot;
 ## [1] 38
-## [1] &quot;writing_mya_0001.txt&quot;
+## [1] &quot;writing_mal_0001.txt&quot;
 ## [1] 39
-## [1] &quot;writing_pan_0001.txt&quot;
+## [1] &quot;writing_mya_0001.txt&quot;
 ## [1] 40
-## [1] &quot;writing_rus_0001.txt&quot;
+## [1] &quot;writing_pan_0001.txt&quot;
 ## [1] 41
-## [1] &quot;writing_sin_0001.txt&quot;
+## [1] &quot;writing_rus_0001.txt&quot;
 ## [1] 42
-## [1] &quot;writing_tam_0001.txt&quot;
+## [1] &quot;writing_sin_0001.txt&quot;
 ## [1] 43
-## [1] &quot;writing_tel_0001.txt&quot;
+## [1] &quot;writing_tam_0001.txt&quot;
 ## [1] 44
-## [1] &quot;writing_tgl_0001.txt&quot;
+## [1] &quot;writing_tel_0001.txt&quot;
 ## [1] 45
-## [1] &quot;writing_tha_0001.txt&quot;
+## [1] &quot;writing_tgl_0001.txt&quot;
 ## [1] 46
-## [1] &quot;writing_tir_0001.txt&quot;
+## [1] &quot;writing_tha_0001.txt&quot;
 ## [1] 47
-## [1] &quot;writing_vai_0001.txt&quot;
+## [1] &quot;writing_tir_0001.txt&quot;
 ## [1] 48
-## [1] &quot;writing_zgh_0001.txt&quot;
+## [1] &quot;writing_vai_0001.txt&quot;
 ## [1] 49
-## [1] &quot;writing_zul_0001.txt&quot;
+## [1] &quot;writing_zgh_0001.txt&quot;
 ## [1] 50
-## [1] &quot;unclassified_voy_0001.txt&quot;
+## [1] &quot;writing_zul_0001.txt&quot;
 ## [1] 51</code></pre>
 <pre class="r"><code>end_time &lt;- Sys.time()
 end_time - start_time</code></pre>
-<pre><code>## Time difference of 12.20062 secs</code></pre>
-<pre class="r"><code>#entropy.df</code></pre>
+<pre><code>## Time difference of 12.38892 secs</code></pre>
 </div>
 </div>
 

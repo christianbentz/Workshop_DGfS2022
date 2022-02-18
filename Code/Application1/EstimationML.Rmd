@@ -1,7 +1,7 @@
 ---
 title: "Unigram Entropy Estimation"
 author: "Chris Bentz"
-date: "11/02/2022"
+date: "18/02/2022"
 output: html_document
 ---
 
@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Session Info
+## Session Info
 Give the session info (reduced).
 ```{r, echo = F}
 # R version
@@ -26,17 +26,17 @@ library(entropy)
 library(quanteda)
 ```
 
-# List files
+## List files
 Create list with all the files which are about to be processed. 
 ```{r}
 # file list for processed texts
-file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/processed", 
+file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/Application1/processed", 
                         recursive = T, full.names = T)
 head(file.list)
 length(file.list)
 ```
 
-# Character Entropy Estimation
+## Character Entropy Estimation
 Estimate character entropy by using relative frequencies of characters in the text.
 ```{r}
 # set counter
@@ -85,8 +85,10 @@ for (file in file.list) {
 end_time <- Sys.time()
 end_time - start_time
 ```
-# Safe outputs to file
+
+## Safe outputs
+Write ouput (data frame) to a comma separated value (csv) file.
 ```{r}
-write.csv(entropy.df, "~/Github/Workshop_DGfS2022/Results/Application1/entropyEstimations.csv", row.names = F, append = F)
+write.csv(entropy.df, "~/Github/Workshop_DGfS2022/Results/Application1/entropy_ML.csv", row.names = F)
 ```
 

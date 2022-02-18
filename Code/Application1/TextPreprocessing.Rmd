@@ -1,7 +1,7 @@
 ---
 title: "Text Preprocessing"
 author: "Chris Bentz"
-date: "10/02/2022"
+date: "18/02/2022"
 output: html_document
 ---
 
@@ -19,7 +19,7 @@ sessionInfo()$R.version$platform
 ```
 
 # Load Libraries
-If the respective libraries are not installed yet, you need to install them using, for example, the command: install.packages("ggplot2").
+If the respective libraries are not installed yet, you need to install them using, for example, the command: install.packages("gsubfn").
 ```{r, message = FALSE}
 library(gsubfn)
 library(readr)
@@ -31,13 +31,14 @@ library(readr)
 Create list with all the files which are about to be processed. 
 ```{r}
 # file list for udhr and voynich texts
-file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/original", 
+file.list <- list.files(path = "~/Github/Workshop_DGfS2022/Data/Application1/original", 
                         recursive = T, full.names = T)
 head(file.list)
 length(file.list)
 ```
 
 ## Split on UTF-8 Characters
+Remove meta-data header, and split text lines into individual UTF-8 characters.
 ```{r}
 # capture starting time
 start_time <- Sys.time()
@@ -66,7 +67,7 @@ for (file in file.list) {
   chars <- chars[chars != " "] # remove white spaces from character vector
   chars <- chars[!is.na(chars)] # remove NAs for vectors which are already shorter than n
   # write characters to file
-  output.file <- paste("~/Github/Workshop_DGfS2022/Data/processed/", filename, sep = "")
+  output.file <- paste("~/Github/Workshop_DGfS2022/Data/Application1/processed/", filename, sep = "")
   write_lines(chars, output.file, sep = " ")
   # counter
   counter <- counter + 1
