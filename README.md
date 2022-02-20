@@ -5,7 +5,7 @@ This repo contains lecture slides and code related to the workshop on Informatio
 **Folder Structure**
 
 
-`Code/` contains the notebooks for the practical session (.ipynb). In the case of R, we also provide the .Rmd and html versions
+`Code/` contains the notebooks for the practical session (.ipynb). In the case of R, we provide additional.Rmd and html files
 
 `Data/` contains the datasets needed to run the notebooks
 
